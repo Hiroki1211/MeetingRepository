@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TagController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,9 @@ Route::get('/', function () {
 
 Route::get('/meeting/member', [UserController::class, 'member']);
 Route::get('/meeting/member/tag', [UserController::class, 'tag']);
+
+Route::get('/meeting/member/tag/make', function () {
+    return view('/meeting/member-tag-make');
+});
+
+Route::post('/meeting/member/tag', [TagController::class, 'make']);
