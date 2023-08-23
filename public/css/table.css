@@ -4,7 +4,7 @@
     overflow-y: scroll;
     margin: auto;
 }
-S
+
 .simple-table {
     border-collapse: collapse;
     border: 1px solid #000;
@@ -30,3 +30,4 @@ tr:nth-child(even) {
 tr:hover {
   background: #d1d1d1;
 }
+

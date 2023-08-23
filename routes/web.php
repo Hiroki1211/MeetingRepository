@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/meeting/member', [UserController::class, 'member']);
+Route::get('/meeting/member/tag', [UserController::class, 'tag']);
